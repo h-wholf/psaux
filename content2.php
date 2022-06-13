@@ -31,7 +31,7 @@
 	<li style="--i:4;--clr:#25d366"><a href="#"><span><i class="fa-solid fa-circle-info"></i></span> informacion</a></li>
 	<li style="--i:3;--clr:#1da1f2"><a href="#"><span><i class="fa-solid fa-pen-nib"></i></span> registro civil</a></li>
 	<li style="--i:2;--clr:#c32aa3"><a href="#"><span><i class="fa-regular fa-clock"></i></span> horarios</a></li>
-	<li style="--i:1;--clr:#c32aa3"><a href="https://www.google.com"><span><i class="fa-solid fa-person-digging"></i></span>obras</a></li>
+	<li style="--i:1;--clr:#c32aa3"><a href="#"><span><i class="fa-solid fa-person-digging"></i></span>obras</a></li>
 
 
 
