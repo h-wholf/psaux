@@ -6,7 +6,7 @@ include 'scripts.php';
 ?>
 <?php
 // aqui se define el titulo de la pagina y se linkea los estilos css y otros metadatos
-include 'head.php';
+include 'head2.php';
 
 ?>
 

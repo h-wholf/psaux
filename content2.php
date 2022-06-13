@@ -21,11 +21,7 @@
 
 </body>
 -->
-<header>
-<div class="titulo"><center>PRESISDENCIA AUXILIAR SANTA MARIA GUADALUPE TECOLA</center></div>
-<br><br><br>
 
-</header>
 <div class="contenedor">
 	
 <section class="info">
