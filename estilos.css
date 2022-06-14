@@ -22,10 +22,30 @@
     color: #0DFFF4;
     font-size: 24px;
     font-family: 'Raleway', sans-serif;
-    padding-top: 50px;
+    
 }
 
+.mensaje
+{
+    color: rgba(255, 255, 255, 0.25);
+    font-size: 24px;
+    text-transform: capitalize;
+    border-radius: 7px;
+    transition: 0.5s;
+    text-decoration: none;
 
+
+
+}
+.mensaje:hover
+{
+    border-left: 1px solid #01E7DC;
+    border-right: 1px solid #01E7DC;
+    padding: 12px;
+    color: #01E7DC;
+    letter-spacing: 0.2em;
+    font-family: 'Raleway', sans-serif;
+}
 .contenido
 {
   
@@ -40,7 +60,16 @@
     background-color: #02374F;
     
 }
+.contenedor2
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    gap: 50px;
 
+}
 
 
 

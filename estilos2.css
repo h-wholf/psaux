@@ -225,3 +225,9 @@ ul li:hover span
     color: rgba(255, 255, 255, 0.25);
     text-transform: capitalize;
 }
+table.diferent 
+{
+border-collapse: separate;
+border-spacing: 70px 15px;
+}
+

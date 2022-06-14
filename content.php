@@ -2,14 +2,14 @@
     <center><a class="titulo" >presidencia auxiliar de santa maria guadalupe tecola</a></center>
 </div>
 
-<form action="index2.php" method="post">
+<form action="login.php" method="post">
 <div class="contenido">
 	
 <div class="inputBox">
-	<input id="nombre" type="tetx" required="required">
+	<input id="nombre" name="nombre" type="tetx" required="required">
 	<span>Nombre usuario</span></div>
 <div class="inputBox">
-	<input id="pass" type="password" required="required">
+	<input id="pass" name="pass" type="password" required="required">
 	<span>Contraseña</span>
 </div>
 <div >
