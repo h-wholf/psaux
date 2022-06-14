@@ -76,7 +76,8 @@
 .inputBox
 {
     position: relative;
-    width: 250px;
+    width: 350px;
+
 
 
 }
@@ -89,7 +90,10 @@
     border-radius: 5px;
     outline: none;
     color: #fff;
-    font-size: 1em;
+    font-size: 0.75em;
+    letter-spacing: 0.2em;
+    font-family: 'Raleway', sans-serif;
+    
     transition: 0.5s;
 }
 
