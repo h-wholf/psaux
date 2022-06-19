@@ -76,7 +76,7 @@ $sentencia->bindParam(":libro", $_POST["libro"]);
 
 $resultado = $sentencia->execute();
 if($resultado === true){
-	echo "<a class='mensaje' href='index.php'> SE REGISTRÓ CORRECTO</a>";
+	echo "<a class='boton2' href='index.php'> SE REGISTRÓ CORRECTO</a>";
 }else{
 	echo "Lo siento, ocurrió un error";
 }
@@ -89,7 +89,7 @@ echo "<audio autoplay loop>
 	function redireccionarPagina() {
   window.location = "libro_agregar.php";
 }
-setTimeout("redireccionarPagina()", 8000);
+setTimeout("redireccionarPagina()", 3000);
 </script>
 
 
