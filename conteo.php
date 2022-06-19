@@ -8,16 +8,15 @@ include 'scripts.php';
 // aqui se define el titulo de la pagina y se linkea los estilos css y otros metadatos
 include 'head.php';
 ?>
-
+<div class="contenido">
+	<div class="mensaje">
 <?php 
-
-
 $db = new SQLite3('libros_114_10.db');                   
 $total = $db->querySingle("SELECT COUNT(*) as count FROM acta");  
-
-echo "total ". $total;
+echo  "total   ".$total;
 ?>
-
+</div>
+</div>
 <?php
 //aqui va el fondo de la pagina web
 include 'botom.php';
