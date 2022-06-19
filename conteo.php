@@ -12,7 +12,7 @@ include 'head.php';
 <?php 
 
 
-$db = new SQLite3('ibros_114_10.db');                   
+$db = new SQLite3('libros_114_10.db');                   
 $total = $db->querySingle("SELECT COUNT(*) as count FROM acta");  
 
 echo "total ". $total;
