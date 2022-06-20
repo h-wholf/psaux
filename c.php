@@ -29,7 +29,7 @@ while($todos<=$total){
 
 
 $c = ($_POST["NOMBRE"]);
-$n = "JUAN"
+$n = "JUAN";
 /*
 
   CRUD con SQLite3, PDO y PHP
