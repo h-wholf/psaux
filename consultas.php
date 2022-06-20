@@ -13,9 +13,9 @@
 
 $db = new basededatos();
 if ($db) {
-	echo "<p> la base de datos de abrio de forma exitosa"
+	echo "<p> la base de datos de abrio de forma exitosa";
 } else{
-	echo "<p> la base de datos de abrio de forma exitosa"
+	echo "<p> la base de datos de abrio de forma exitosa";
 }
 ?>
 
