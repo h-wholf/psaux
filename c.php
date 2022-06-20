@@ -40,7 +40,6 @@ include_once __DIR__ . "/base_de_datos.php"; #Al incluir este script, podemos us
 $resultado = $baseDeDatos->query("SELECT * FROM acta where n_conpleto ='$n';");
 $datos = $resultado->fetchAll(PDO::FETCH_OBJ);
 ?>
-?>
 
 <center>
   <table class="tabla">
