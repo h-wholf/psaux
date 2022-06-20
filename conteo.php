@@ -20,7 +20,7 @@ echo  "total   ".$total;
 
 <?php 
 $db = new SQLite3('libros_114_10.db');
-$busqueda = $db->querySingle("SELECT select *from acta"); 
+$busqueda = $db->querySingle("SELECT *from acta"); 
 echo  "todos los registros  ".$busqueda;
 ?>
 
