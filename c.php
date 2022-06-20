@@ -29,7 +29,7 @@ while($todos<=$total){
 
 
 $c = ($_POST["NOMBRE"]);
-$n = "JUAN";
+$n = "BENJAMIN";
 /*
 
   CRUD con SQLite3, PDO y PHP
@@ -37,8 +37,9 @@ $n = "JUAN";
 */
 include_once __DIR__ . "/base_de_datos.php"; #Al incluir este script, podemos usar $baseDeDatos
 
-$resultado = $baseDeDatos->query("SELECT * FROM acta where n_conpleto ='$n';");
+$resultado = $baseDeDatos->query("SELECT * FROM acta where nombre ='$n';");
 $datos = $resultado->fetchAll(PDO::FETCH_OBJ);
+
 ?>
 
 <center>
