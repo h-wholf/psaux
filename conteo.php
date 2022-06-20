@@ -16,6 +16,14 @@ $total = $db->querySingle("SELECT COUNT(*) as count FROM acta");
 echo  "total   ".$total;
 ?>
 </div>
+<div class="mensaje">
+
+<?php 
+$db = new SQLite3('libros_114_10.db');
+$busqueda = $db->querySingle("SELECT select *from acta"); 
+?>
+
+
 </div>
 <?php
 //aqui va el fondo de la pagina web
