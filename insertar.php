@@ -37,7 +37,7 @@ if ($consulta == "" ) {
 
 	echo "no hay datos puedes continuar a registrar";
 } else {
-	echo "<div><a class='mensaje' href='index.php'>regresar al inicio</a></div>";
+	echo "<div><center><a class='mensaje' href='index.php'>regresar al inicio</a></center></div><br>";
 	exit("el acta ya esta registrada a nombre de " .$consulta); #Terminar el script definitivamente
 
 }
