@@ -35,7 +35,7 @@ $consulta = shell_exec("echo 'select * from acta where año = $año and n_acta =
 
 echo "esta acta pertenece a  ". $consulta;
 
-if ($consulta = "" ) {
+if ($consulta == "" ) {
 
 	echo "no hay datos puedes continuar a registrar";
 }
