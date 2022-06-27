@@ -23,9 +23,9 @@ include 'scripts.php';
 // aqui se define el titulo de la pagina y se linkea los estilos css y otros metadatos
 include 'head.php';?>
 
+<body>
 
-
-<div class="contenedor">
+<div class="contenedor2">
 <div class="mensaje" >
 <?php
 $año = ($_POST["año"]);
@@ -121,3 +121,4 @@ include 'botom.php';
 ?>
 </div>
 </div>
+</body>
