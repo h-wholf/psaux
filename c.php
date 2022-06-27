@@ -8,17 +8,17 @@ include 'scripts.php';
 include 'head.php';?>
 
 <?php
-/*
+
 $db = new SQLite3('libros_114_10.db');
 $total = $db->querySingle("SELECT COUNT(*) as count FROM acta");
 echo "total de registros ".$total;
 
 
 
-print_r($db->querySingle("SELECT *FROM acta where ID = 48;",true));
+print_r($db->querySingle("SELECT nombre acta where ID = 48;",true));
 
 
-
+/*
 $todos = 1;
 while($todos<=$total){
   echo "registro  ". $todos."  ";
@@ -26,7 +26,6 @@ while($todos<=$total){
   $todos++;
 }
 */
-
 
 $c = ($_POST["NOMBRE"]);
 $n = "BENJAMIN";
@@ -41,7 +40,7 @@ $resultado = $baseDeDatos->query("SELECT * FROM acta where nombre ='$n';");
 $datos = $resultado->fetchAll(PDO::FETCH_OBJ);
 
 ?>
-
+<?php /*
 <center>
   <table class="tabla">
     <thead>
@@ -73,8 +72,8 @@ $datos = $resultado->fetchAll(PDO::FETCH_OBJ);
       <?php } /*Cerrar llave, fin de foreach*/ ?>
 
     </tbody>
-  </table>
-
+  </table>*/
+?>
 <?php
 //aqui va el fondo de la pagina web
 include 'botom.php';
