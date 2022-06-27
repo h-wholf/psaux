@@ -28,8 +28,20 @@ include 'head.php';?>
 <div class="contenedor2">
 
 <?php
+$año = ($_POST["año"]);
+$n_acta = ($_POST["n_acta"]);
 
+$consulta = shell_exec("echo 'select * from acta where año = $año and n_acta = $n_acta;'|sqlite3 libros_114_10.db");
 
+if ($consulta == "" ) {
+
+	echo "no hay datos puedes continuar a registrar";
+} else {
+	exit("el acta ya esta registrada a nombre de " .$consulta); #Terminar el script definitivamente
+
+}
+
+	
 
 
 
