@@ -28,14 +28,12 @@ include 'head.php';?>
 <div class="contenedor2">
 
 <?php
-$nombre = ($_POST["nombre"]);
+$año = ($_POST["año"]);
 $n_acta = ($_POST["n_acta"]);
 
-$consulta = exec('echo "select nombre from acta where nombre = '$nombre' and n_acta = '$n_acta';"|sqlite3 libros_114_10.db');
+$consulta = shell_exec("echo 'select * from acta where año = $año and n_acta = $n_acta;'|sqlite3 libros_114_10.db");
 
-echo "buscaste ".$consulta ."mas ".$n_acta;
-
-
+echo "esta acta pertenece a  ". $consulta
 
 
 
