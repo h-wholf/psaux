@@ -26,7 +26,7 @@ include 'head.php';?>
 
 
 <div class="contenedor2">
-
+<div class="mensaje" >
 <?php
 $año = ($_POST["año"]);
 $n_acta = ($_POST["n_acta"]);
@@ -37,6 +37,7 @@ if ($consulta == "" ) {
 
 	echo "no hay datos puedes continuar a registrar";
 } else {
+	echo "<div><a class="mensaje" href="index.php">regresar al inicio</a></div>";
 	exit("el acta ya esta registrada a nombre de " .$consulta); #Terminar el script definitivamente
 
 }
@@ -118,4 +119,5 @@ setTimeout("redireccionarPagina()", 45000);
 include 'botom.php';
 
 ?>
+</div>
 </div>
