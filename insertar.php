@@ -28,6 +28,23 @@ include 'head.php';?>
 <div class="contenedor2">
 
 <?php
+$nombre = ($_POST["nombre"]);
+$n_acta = ($_POST["n_acta"]);
+
+$bd = new SQLite3('libros_114_10.db');
+
+$consulta = ($bd->exec("select nombre from acta where nombre = '$nombre'"));
+
+echo $consulta;
+
+
+
+
+
+
+
+
+
 /*
 	CRUD con SQLite3, PDO y PHP
 	parzibyte.me
@@ -44,6 +61,7 @@ if (empty($_POST["FECHA"])) {
 if (empty($_POST["REGISTRO"])) {
 	exit("Faltan uno o más datos"); #Terminar el script definitivamente
 }
+?>
 */
 #Si llegamos hasta aquí es porque los datos al menos están definidos
 include_once __DIR__ . "/base_de_datos.php"; #Al incluir este script, podemos usar $baseDeDatos
@@ -89,7 +107,7 @@ echo "<audio autoplay loop>
 	function redireccionarPagina() {
   window.location = "libro_agregar.php";
 }
-setTimeout("redireccionarPagina()", 3000);
+setTimeout("redireccionarPagina()", 8000);
 </script>
 
 
