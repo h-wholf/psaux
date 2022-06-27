@@ -31,12 +31,9 @@ include 'head.php';?>
 $nombre = ($_POST["nombre"]);
 $n_acta = ($_POST["n_acta"]);
 
-$bd = new SQLite3('libros_114_10.db');
+$consulta = exec('echo "select nombre from acta where nombre = '$nombre' and n_acta = '$n_acta';"|sqlite3 libros_114_10.db');
 
-$consulta = ($bd->exec("select nombre from acta where nombre = '$nombre'"));
-
-echo $consulta;
-
+echo "buscaste ".$consulta ."mas ".$n_acta;
 
 
 
@@ -107,7 +104,7 @@ echo "<audio autoplay loop>
 	function redireccionarPagina() {
   window.location = "libro_agregar.php";
 }
-setTimeout("redireccionarPagina()", 8000);
+setTimeout("redireccionarPagina()", 45000);
 </script>
 
 
