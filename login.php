@@ -17,7 +17,7 @@ $pass = $_POST['pass'];
 
 if (($nombre=="hoakin") && ($pass=="hoakin21")) {
 	echo " hola ". $nombre. " tienes acceso" ;
-	echo "<SCRIPT LANGUAGE=\"javascript\"> setTimeout(\"location.href= 'validar.php'\",5000)</SCRIPT>";
+	echo "<SCRIPT LANGUAGE=\"javascript\"> setTimeout(\"location.href= 'libro_agregar.php'\",5000)</SCRIPT>";
 }else {
 	echo "  lo lamentamos no tienes acceso a la pagina";
 }
