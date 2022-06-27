@@ -25,7 +25,7 @@ include 'head.php';?>
 
 
 
-<div class="contenedor2">
+<div class="contenedor">
 <div class="mensaje" >
 <?php
 $año = ($_POST["año"]);
@@ -109,7 +109,7 @@ echo "<audio autoplay loop>
 	function redireccionarPagina() {
   window.location = "libro_agregar.php";
 }
-setTimeout("redireccionarPagina()", 45000);
+setTimeout("redireccionarPagina()", 3000);
 </script>
 
 
